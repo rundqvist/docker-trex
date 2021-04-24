@@ -3,7 +3,7 @@ FROM nvidia/cuda:11.2.2-base
 LABEL maintainer="mattias.rundqvist@icloud.com"
 
 ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
-ENV TREX_VERSION="0.20.1"
+ENV TREX_VERSION="0.20.3"
 ENV CONFIG_FILE="config_example.json"
 
 RUN apt-get update && apt-get install -y --no-install-recommends wget \
